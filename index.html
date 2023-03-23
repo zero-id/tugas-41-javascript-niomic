@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 41 JS</title>
+</head>
+<body>
+    <p>Pilih Warna Background:</p>
+    <select id="mySelect" onchange="myFunction();">
+        <option value="red">Merah</option>
+        <option value="blue">Biru</option>
+        <option value="yellow">Kuning</option>
+        <option value="white">Putih</option>
+    </select>
+
+    <script>
+        function myFunction() {
+            let a = document.getElementById('mySelect').value;
+            document.body.style.backgroundColor = a;
+        }
+    </script>
+</body>
+</html>
